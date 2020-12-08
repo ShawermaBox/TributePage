@@ -1,6 +1,7 @@
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 #main {
@@ -13,7 +14,7 @@ body {
 
 #image {
   max-width: 100%;
-  padding: 45px 0;
+  padding: 45px 45px;
 }
 
 #title {
@@ -24,6 +25,13 @@ body {
 }
 
 #tribute-info {
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 section p {
@@ -74,6 +82,27 @@ h2 {
   #img-div {
     width: 100%;
   }
+  #image {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 680px) {
+  section p {
+    max-width: 600px;
+  }
+  .members img {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 630px) {
+  section p {
+    max-width: 550px;
+  }
+  .members img {
+    max-width: 550px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -83,6 +112,18 @@ h2 {
   }
   #img-div {
     width: 100%;
+  }
+  #image {
+    max-width: 85%;
+  }
+  section p {
+    max-width: 450px;
+  }
+  .members img {
+    max-width: 450px;
+  }
+  .members h2 {
+    font-size: 40px;
   }
 }
 
