@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+#image {
+  max-width: 100%;
+  padding: 45px 0;
+}
+
+#title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  display: none;
+}
+
+#tribute-info {
+}
+
+section p {
+  max-width: 650px;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 55px;
+}
+
+#p-link {
+  font-weight: bold;
+}
+
+#img-div {
+  background-color: white;
+  width: 98%;
+}
+
+#img-caption {
+  padding: 15px 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px 4px;
+}
+
+.column {
+  flex: 30%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 30%;
+    max-width: 30%;
+  }
+  #img-div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #img-div {
+    width: 100%;
+  }
+}
+
+.members {
+  position: relative;
+  width: 100%;
+}
+
+.members img {
+  width: 650px;
+  opacity: 0.7;
+}
+
+.members h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: whitesmoke;
+}
